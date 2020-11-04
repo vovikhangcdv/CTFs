@@ -46,7 +46,7 @@ Tận dụng deserialization của **RMI** để thực hiện **RCE**. Nhưng v
 
 ## Ysoserial
 
-Do ở bài này không còn RCE gadget chain để khai thác nữa, đòi hỏi phải tìm 1 cách RCE khác. Ý tưởng là fuzz hết các payloads từ [ysoserial](https://github.com/frohoff/ysoserial). Ngoài ra, còn một cách tìm classpath thông minh hơn, tránh bỏ sót, kiểm tra các class tự xây dựng trên server mà mình chưa biết chẳng hạn, thì có thể sử dụng [GadgetProbe](https://github.com/BishopFox/GadgetProbe)(đọc thêm về cách hoạt động tại [blog](https://testbnull.medium.com/gadgetchain-gadgetprobe-blind-classpath-guessing-da053a575826) từ tác giả **Jang**, rất bổ ích!). Trong bài này, mình thấy không cần dùng đến **GadgetProbe**, nhưng thôi nhân tiện thì làm luôn cho biết.
+Do ở bài này tác giả bỏ đi gadget toString() nên không còn RCE trực tiếp qua class `Player()` được nữa, đòi hỏi phải tìm 1 cách RCE khác. Ý tưởng là fuzz hết các payloads từ [ysoserial](https://github.com/frohoff/ysoserial). Ngoài ra, còn một cách tìm classpath thông minh hơn, tránh bỏ sót, kiểm tra các class tự xây dựng trên server mà mình chưa biết chẳng hạn, thì có thể sử dụng [GadgetProbe](https://github.com/BishopFox/GadgetProbe)(đọc thêm về cách hoạt động tại [blog](https://testbnull.medium.com/gadgetchain-gadgetprobe-blind-classpath-guessing-da053a575826) từ tác giả **Jang**, rất bổ ích!). Trong bài này, mình thấy không cần dùng đến **GadgetProbe**, nhưng thôi nhân tiện thì làm luôn cho biết.
 
 ## Kiểm tra Class Path Qua GadgetProbe
 
