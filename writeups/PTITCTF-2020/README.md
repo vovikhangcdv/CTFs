@@ -3,41 +3,25 @@
 
 title: "[PTITCTF2020] Web Exploitation Writeups"
 subtitle: ""
-summary: "The contest takes place for 6 hours. I solved 2/5 challenges on time (Welcome and Login Login Login). This write-up had just finished after that. Thanks PTIT University for hosting this context. Thanks nhthongDfVn for great challenges and your enthusiasm!"
+summary: ""
 authors: [DoubleVKay]
 tags: []
 categories: [writeups,web,ctf]
-date: 2020-10-26T23:19:41+07:00
-lastmod: 2020-10-26T23:19:41+07:00
-featured: false
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
+
+# [PTITCTF2020] Web Exploitation Writeups
 
 The contest takes place for 6 hours. I solved 2/5 challenges on time (Welcome and Login Login Login). This write-up had just finished after that. Thanks PTIT University for hosting this context. Thanks nhthongDfVn for great challenges and your enthusiasm!
 
 ## Challenges
 
-- [Challenges](#challenges)
-- [Welcome](#welcome)
-- [Login Login Login](#login-login-login)
-- [PISBLOG](#pisblog)
-- [Covid](#covid)
-- [References](#references)
+- [[PTITCTF2020] Web Exploitation Writeups](#ptitctf2020-web-exploitation-writeups)
+  - [Challenges](#challenges)
+  - [Welcome](#welcome)
+  - [Login Login Login](#login-login-login)
+  - [PISBLOG](#pisblog)
+  - [Covid](#covid)
+  - [References](#references)
 
 [References](#references)
 
