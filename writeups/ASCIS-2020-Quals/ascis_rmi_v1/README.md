@@ -11,6 +11,8 @@ categories: [writeups,web,ctf,java,deserialization]
 
 # [ACIS-2020-Quals] ascis_rmi_v1
 
+![Player](img/p1.png)
+
 ## Description
 
 - Source: [acis_rmi_v1](src/acis_rmi_v1)
@@ -21,6 +23,8 @@ categories: [writeups,web,ctf,java,deserialization]
 ### Idea
 
 The gadget chain in this challenge similars to [CommonsCollections5 gadget chain](https://github.com/frohoff/ysoserial/blob/master/src/main/java/ysoserial/payloads/CommonsCollections5.java). But it's a simpler version. The challenge has its own RCE endpoint - `Player.toString()`, so we just need setting `admin=true` and change logCommand to run remote commands.
+
+![Player](img/p2.png)
 
 ### Decompiling
 
@@ -88,3 +92,5 @@ public class ASCISPlayer {
     }
 }
 ```
+
+![Player](img/p3.png)
