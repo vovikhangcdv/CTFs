@@ -17,10 +17,15 @@ categories: [writeups,web,ctf,java,deserialization]
 
 - Source: [acis_rmi_v1](src/acis_rmi_v1)
 - JDK version: [jdk-8u131-linux-x64.tar.gz](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
+- Hints:
+  1.  `attacking-java-rmi-services-after-jep-290`
+  2.  `tools can't help !!!`
+  3.  `if you can deserialize arbitrary object, find a way to trigger rmi.Player.toString() method, ez RCE !`
+
 
 ## Solution
 
-### Idea
+### Summary
 
 The gadget chain in this challenge similars to [CommonsCollections5 gadget chain](https://github.com/frohoff/ysoserial/blob/master/src/main/java/ysoserial/payloads/CommonsCollections5.java). But it's a simpler version. The challenge has its own RCE endpoint - `Player.toString()`, so we just need setting `admin=true` and change logCommand to run remote commands.
 
