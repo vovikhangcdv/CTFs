@@ -170,7 +170,7 @@ Mình hiện thực lại payload [CommonsCollections5](https://github.com/froho
 
 Có thể thấy gadget chain trong **CommonsCollections5** gọi **InvokerTransformer** đến 3 lần, ý tưởng sẽ là modify trường `serialVersionUID` của class này và giữ nguyên phần code build payload của **Ysoserial**.
 
-### Set value for static final field: serialVersionUID
+## Set value for static final field: serialVersionUID
 
 Để set `serialVersionUID` của class `InvokerTransformer` thì cần phải dùng reflection, lấy trường `serialVersionUID` lưu vào 1 đối tượng thuộc lớp `Field`, rồi sử dụng hàm `Field.set()` để set giá trị (tương tự cách set `logCommand` trong [ascis_rmi_v1](../ascis_rmi_v1/)). Tuy nhiên, bản thân mỗi trường trong một class cũng có những thuộc tính riêng như: private, public, static, final, ... nên bên trong class `Field` cũng có các trường khác để ghi nhớ những điều này. Ở đây chúng ta chú ý đến trường `Field.modifiers`.
 
