@@ -1,0 +1,13 @@
+Build local
+
+using the given jdk:
+
+java -jar ascis_service1.jar
+
+
+How to comunicate with server?
+
+java -jar ascis_player.jar [ip] [port] player
+
+
+Flag in /home/service/flag.txt, good luck!
