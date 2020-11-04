@@ -19,7 +19,7 @@ categories: [writeups,web,ctf,java,deserialization]
   - [Kiểm tra Class Path Qua GadgetProbe](#kiểm-tra-class-path-qua-gadgetprobe)
   - [Fuzz Ysoserial Payloads](#fuzz-ysoserial-payloads)
   - [Build Payload](#build-payload)
-    - [Set value for static final field: serialVersionUID](#set-value-for-static-final-field-serialversionuid)
+  - [Set value for static final field: serialVersionUID](#set-value-for-static-final-field-serialversionuid)
   - [Thảo luận thêm](#thảo-luận-thêm)
 - [Credits](#credits)
 - [References](#references)
