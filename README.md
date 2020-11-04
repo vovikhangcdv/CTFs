@@ -12,7 +12,7 @@ CTF | Name | Category | Summary | Notes
 
 Name | Summary
 --- | --- |
-[Mytool] | Tool helps ...
+[Tool-name]() | Updating ...
 
 ### Footer
 
