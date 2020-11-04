@@ -4,15 +4,18 @@ These are CTF contests, writeups and tools, ... - by me. Check it :seedling:!
 
 ## CTF Challenges
 
-CTF | Name | Category | Summary | Notes
---- | --- | --- | --- | --- |
-[PTITCTF2020](writeups/PTITCTF-2020) |  | Web Exploitation | All Web challenges |  
+CTF | Name | Category | Summary | Notes | Done?
+--- | --- | --- | --- | --- | --- |
+[PTITCTF2020](writeups/PTITCTF-2020) |  | Web Exploitation | All Web challenges |  | :heavy_check_mark:
+[ASCIS 2020 Quals](writeups/ASCIS-2020-Quals) | [TSULOTT3](writeups/ASCIS-2020-Quals/TSULOTT3) | Web Exploitation | Python, SSTI |  | :heavy_check_mark:
+[ASCIS 2020 Quals](writeups/ASCIS-2020-Quals) | [ascis_rmi_v1](writeups/ASCIS-2020-Quals/ascis_rmi_v1) | Web Exploitation | All Web challenges |  | :heavy_check_mark:
+[ASCIS 2020 Quals](writeups/ASCIS-2020-Quals) | [ascis_rmi_v2](writeups/ASCIS-2020-Quals/ascis_rmi_v2) | Web Exploitation | All Web challenges |  | :heavy_check_mark:
 
 ## Tools
 
-Name | Summary
---- | --- |
-[Tool-name]() | Updating ...
+Name | Summary | Version
+--- | --- | --- |
+[Tool-name](tools/) | Updating ... | 0.0
 
 ### Footer
 
