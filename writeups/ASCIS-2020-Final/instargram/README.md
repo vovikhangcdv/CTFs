@@ -172,6 +172,6 @@ Truy cập lại `/account.php` để kích hoạt `convert` và get flag.
 
 Thừa nhận hay không thì mình vẫn là một mắt xích yếu, sr my team!.
 
-Và, yoh, hơi sến xíu nhưng thực sự cảm ơn những người anh đã giúp đỡ em trong chặng đường học cyber sec này, rất ý nghĩa, mà chắc còn dài =)).
+Và, yoh, hơi sến xíu nhưng thực sự cảm ơn những người anh đã giúp đỡ em trong chặng đường học cyber sec này, rất ý nghĩa! (và chắc còn dài =)))
 
-Btw, chúc mừng team **HCMUS.Twice** - một chức vô địch xứng đáng. Cuộc thi là một trãi nghiệm rất thú vị, thanks all và ... hẹn gặp lại!
+Btw, chúc mừng team **HCMUS.Twice** - một chức vô địch xứng đáng. Cuộc thi là một trãi nghiệm rất thú vị, thanks all và ... hẹn gặp lại.
