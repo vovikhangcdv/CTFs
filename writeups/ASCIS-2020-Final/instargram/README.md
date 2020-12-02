@@ -132,7 +132,7 @@ Vậy tên file cần có dạng:
 $filename = str_repeat("a",96).".svg"
 ```
 
-Lúc này, nếu tiến hành chạy reverse shell hay outbound thì sẽ nhận ra server đã chặn. Vậy cần phải extract output command ra đâu đó, ra file? Nhưng chỉ có thư mục upload là có quyền ghi và như đã trình bày, đường dẫn thư mục upload của mỗi user là bí mật?
+Lúc này, nếu tiến hành chạy reverse shell hay outbound thì sẽ nhận ra server đã chặn. Vậy cần phải extract output command ra đâu đó, ra file? Nhưng chỉ có thư mục upload là có quyền ghi và như đã trình bày, đường dẫn thư mục upload của mỗi user là bí mật.
 
 *Đây cũng là lý do không dùng cách upload file php (dùng truncation attack) để lên shell được*
 
