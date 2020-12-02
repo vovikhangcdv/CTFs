@@ -25,7 +25,7 @@ categories: [writeups,web,ctf,php,imagemagick]
 
 ## Summary
 
-Website cho phép đăng ký, đăng nhập, thay đổi avatar. Khi thay đổi avatar sẽ gọi đến lệnh `convert` từ system (**Imagemagick**) để chuyển đổi ảnh. Kết hợp lỗi [ImageMagick - Shell injection via PDF password](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html) và *SQL Truncation Attack* khai thác thực thi mã từ xa (**RCE**).
+Website cho phép đăng ký, đăng nhập, thay đổi avatar. Khi thay đổi avatar sẽ gọi đến lệnh `convert` từ system (**Imagemagick**) để chuyển đổi ảnh. Kết hợp lỗi [ImageMagick - Shell injection via PDF password](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html) và **SQL Truncation Attack** khai thác thực thi mã từ xa (**RCE**).
 
 ## Analysis
 
@@ -94,9 +94,9 @@ Khi đã upload lên server, server sẽ sử dụng **Imagemagick** để chuy�
 ![img2](img/img2.png)
 - Tìm ...  
 ![img3](img/img3.png)
-- Và [đây](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html) là bài phân tích chi tiết lỗi, cũng như cách exploit. Nó được đăng vào **November 21, 2020**. Vậy là đề được lấy cảm hứng từ 1 bug mới được public cách đây 1 tuần ...
+- Và [đây](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html) là bài phân tích chi tiết lỗi, cũng như cách exploit. Nó được đăng vào **November 21, 2020**. Vậy là đề được lấy cảm hứng từ 1 bug mới được public cách ngày thi 1 tuần ...
 
-**Tóm lược**, **ImageMagick** cho phép sử dụng mật khẩu khi chuyển đổi PDF thông qua option `-authenticate`. Option này được dùng trong việc gọi một command khác, và nó không được làm sạch an toàn. Đồng nghĩa, việc kiểm soát thành công `-authenticate` sẽ dẫn đến **RCE**. Tuy nhiên điều này không phải lúc nào cũng khả thi (như trong bài này). May mắn thay, **ImageMagick** còn hỗ trợ **ImageMagick Scripting Language (MSL)** thông qua 1 file input **svg**, có thể truyền thẳng option bên trong nội dung file. Chi tiết hơn có thể xem [tại đây](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html)
+**Tóm lược**, ImageMagick cho phép sử dụng mật khẩu khi chuyển đổi PDF thông qua option `-authenticate`. Option này được dùng trong việc gọi một command khác, và nó không được làm sạch an toàn. Đồng nghĩa, việc kiểm soát thành công `-authenticate` sẽ dẫn đến **RCE**. Tuy nhiên điều này không phải lúc nào cũng khả thi (như trong bài này). May mắn thay, ImageMagick còn hỗ trợ **ImageMagick Scripting Language (MSL)** thông qua 1 file input **svg**, có thể truyền thẳng option bên trong nội dung file. Chi tiết hơn có thể xem [tại đây](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html)
 
 **Quay lại với đề bài**, như vậy, nếu upload 1 file **SVG**, khi server gọi `convert evil.svg whatever.jpg`, thì `$(command)` sẽ được thực thi.
 
@@ -145,7 +145,7 @@ Quay lại source code được cung cấp, tại `images/avatars/`:
 
 ## Final Payload
 
-- Filename: **aa...aa.svg** (lenth == 100)
+- Filename: **aa...aa.svg** (length == 100)
 - Payload
 ```html
 <image authenticate='ff" `echo $(cat /flag.txt)> ./images/avatars/978581028bb6f432c5a3a7694e8dad32/doublevkay.txt`;"'>
@@ -159,7 +159,7 @@ Quay lại source code được cung cấp, tại `images/avatars/`:
 </image>
 ```
 
-Truy cập lại `/account.php` để thực thi `convert` và get flag.
+Truy cập lại `/account.php` để kích hoạt `convert` và get flag.
 
 ![flag](img/flag.png)
 ![a](img/img5.jpg)
@@ -170,6 +170,8 @@ Truy cập lại `/account.php` để thực thi `convert` và get flag.
 
 ## Không liên quan
 
-Thừa nhận hay không thì mình vẫn là một mắt xích yếu - Sorry my team!.
-Và, yoh, hơi sến xíu nhưng thực sự cảm ơn những người anh đã giúp đỡ em trong chặng đường học cyber sec này, rất ý nghĩa, mà chắc còn diễn ra dài dài =)).
+Thừa nhận hay không thì mình vẫn là một mắt xích yếu, sr my team!. <br>
+
+Và, yoh, hơi sến xíu nhưng thực sự cảm ơn những người anh đã giúp đỡ em trong chặng đường học cyber sec này, rất ý nghĩa, mà chắc còn dài =)).<br>
+
 Btw, chúc mừng team **HCMUS.Twice** - một chức vô địch xứng đáng. Cuộc thi là một trãi nghiệm rất thú vị, thanks all và ... hẹn gặp lại!
