@@ -141,7 +141,7 @@ Lúc này, nếu tiến hành chạy reverse shell hay outbound thì sẽ nhận
 Quay lại source code được cung cấp, tại `images/avatars/`:
 ![img4](img/img4.png)
 
-**978581028bb6f432c5a3a7694e8dad32**?. Một gợi ý của đề để lại, thư mục upload của user **ducnt** với mode `0777`. Như vậy, đã tìm được nơi ghi output của command.
+**978581028bb6f432c5a3a7694e8dad32** - Một gợi ý của đề để lại, thư mục upload của user **ducnt** với mode `0777`. Như vậy, đã tìm được nơi ghi output của command.
 
 ## Final Payload
 
