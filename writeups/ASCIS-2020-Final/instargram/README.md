@@ -9,7 +9,7 @@ tags: []
 categories: [writeups,web,ctf,php,imagemagick]
 ---
 
-# [ACIS-2020-Final] Sinh viên với An Toàn Thông Tin ASEAN 2020 Final Web Writeup
+# [ASCIS-2020-Final] Sinh viên với An Toàn Thông Tin ASEAN 2020 Final Web Writeup
 
 # Instargram
 
