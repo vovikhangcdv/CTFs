@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "[ACIS-2020-Final] Web02: Instargram"
+title: "[ASCIS 2020 Final] Web02 Writeup: Instargram"
 subtitle: ""
 summary: ""
 authors: [DoubleVKay]
